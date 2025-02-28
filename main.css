@@ -1,0 +1,67 @@
+@import url("links.css");
+
+/* Hide "(edited)" from messages until hovered */
+span:has(> time[aria-label^="Edited"]) {
+  opacity: 0;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+/* Prevent re-rendering every message on scroll */
+[class*="scroller_"] {
+  will-change: scroll-position;
+}
+
+/* Prevent audio previews from cutting off the filename */
+div[class^="wrapperAudio_"] {
+  width: auto !important;
+}
+
+/* Blur usernames when viewing profiles until hover */
+span[class^="userTagUsername__"] {
+  padding: 5px;
+  filter: blur(4px);
+  &:hover {
+    filter: blur(0px);
+  }
+}
+
+/* Hide usernames when using discord quick-search */
+div[class^="name__"]:has(span[class^="match__"]) > span[class^="username__"] {
+  display: none;
+}
+
+/* Hide clan tags, Discord is removing them soon. */
+span[class^="clanTag__"] {
+  display: none;
+}
+
+/* Remove the "invite to server" button when right clicking on a user */
+#user-context-invite-to-server {
+  display: none;
+}
+
+/* Fix the call background looking out of place */
+[class^="callContainer_"],
+[class^="chat_"] > [class^="wrapper_"]:has([class^="activityPanelContainer_"]) {
+  background-color: unset;
+}
+[class*="gradientContainer_"] {
+  display: none;
+}
+
+/* Hides the send a gift button */
+button[aria-label="Send a gift"] {
+  display: none;
+}
+
+/* Hide vc hang statuses entirely */
+/* [class*=iconGroup]:has([class*=hangStatusIcon], [d*='M13 3a1'], [class*=gameIcon]) {
+  display: none;
+} */
+
+/* Fix inconsistent padding in user area */
+/* section[aria-label="User area"] > div[class^="container__"] {
+  height: auto;
+} */

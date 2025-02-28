@@ -1,0 +1,59 @@
+/* Makes discord links blurple */
+div[id^=message-content] > a[href^="https://discord.com"], 
+div[id^=message-content] > a[href^="https://canary.discord.com"], 
+div[id^=message-content] > a[href^="https://ptb.discord.com/"], 
+div[id^=message-content] > a[href^="https://discordapp.com"], 
+div[id^=message-content] > a[href^="https://cdn.discord.com"], 
+div[id^=message-content] > a[href^="https://cdn.discordapp.com"],
+div[id^=message-content] > a[href^="https://dis.gd"], 
+div[id^=message-content] > a[href^="https://discord.gg"]
+{
+  color: var(--bg-brand);
+}
+/* Makes spotify links green */
+div[id^=message-content] > a[href^="https://spotify.com"], 
+div[id^=message-content] > a[href^="https://open.spotify.com"],
+div[id^=message-content] > a[href^="https://spotify.link"]
+{
+  color: rgb(24, 185, 81);
+}
+/* Makes steam links steam blue */
+div[id^=message-content] > a[href^="https://steampowered.com"], 
+div[id^=message-content] > a[href^="https://store.steampowered.com"],
+div[id^=message-content] > a[href^="https://steamcommunity.com"]
+{
+  color: rgb(32, 105, 164);
+}
+/* Makes youtube links red */
+div[id^=message-content] > a[href^="https://youtu.be"], 
+div[id^=message-content] > a[href^="https://youtube.com"],
+div[id^=message-content] > a[href^="https://www.youtube.com"]
+{
+  color: rgb(255, 62, 62);
+}
+/* Makes osu links pink */
+div[id^=message-content] > a[href^="https://osu.ppy.sh"]
+{
+  color: rgb(242, 97, 159);
+}
+/* makes ripley fucking pink */
+div[id^=message-content] > a[href^="https://zen.anekodot.lol"]
+{
+  color: #fcc7d4;
+}
+/* Makes google links yellow */
+div[id^=message-content] > a[href^="https://google.com/"],
+div[id^=message-content] > a[href^="https://goog.gl/"]
+{
+  color: rgb(251, 188, 4);
+}
+/* Makes github links light-gray */
+div[id^=message-content] > a[href^="https://github.com"],
+div[id^=message-content] > a[href^="https://gist.github.com/"]
+{
+  color: rgb(172, 172, 172);
+}
+
+.messagelogger-deleted [class*="contents"] > :is(div, h1, h2, h3, p) {
+  color: rgb(80, 80, 80) !important;
+}
