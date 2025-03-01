@@ -27,14 +27,6 @@ span[class^="userTagUsername__"] {
   }
 }
 
-/* 
- * Hide usernames when using discord quick-search 
- * This could potentially have unforseen consequences, but i haven't seen them yet
- */
-span[class^="username__"] {
-  display: none;
-}
-
 /* Hide clan tags, Discord is removing them soon. */
 span[class^="clanTag__"] {
   display: none;
@@ -67,4 +59,12 @@ button[aria-label="Send a gift"] {
 /* Fix inconsistent padding in user area */
 /* section[aria-label="User area"] > div[class^="container__"] {
   height: auto;
+} */
+
+/* 
+ * Hide usernames when using discord quick-search 
+ * TODO: Issue: when applied, names in the member list do not show.
+ */
+/* span[class^="username__"] {
+    display: none;
 } */
