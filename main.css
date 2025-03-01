@@ -27,8 +27,11 @@ span[class^="userTagUsername__"] {
   }
 }
 
-/* Hide usernames when using discord quick-search */
-div[class^="name__"]:has(span[class^="match__"]) > span[class^="username__"] {
+/* 
+ * Hide usernames when using discord quick-search 
+ * This could potentially have unforseen consequences, but i haven't seen them yet
+ */
+span[class^="username__"] {
   display: none;
 }
 
