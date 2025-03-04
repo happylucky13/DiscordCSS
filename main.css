@@ -16,6 +16,7 @@ span:has(> time[aria-label^="Edited"]) {
 /* Prevent audio previews from cutting off the filename */
 div[class^="wrapperAudio_"] {
   width: auto !important;
+  min-width: 432px;
 }
 
 /* Blur usernames when viewing profiles until hover */
