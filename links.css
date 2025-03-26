@@ -8,33 +8,33 @@ div[id^=message-content] > a[href^="https://cdn.discordapp.com"],
 div[id^=message-content] > a[href^="https://dis.gd"], 
 div[id^=message-content] > a[href^="https://discord.gg"]
 {
-  color: var(--bg-brand);
+  color: var(--bg-brand); /* this is a variable defined by discord, not a color, you can make it one though. hmm*/
 }
 /* Makes spotify links green */
 div[id^=message-content] > a[href^="https://spotify.com"], 
 div[id^=message-content] > a[href^="https://open.spotify.com"],
 div[id^=message-content] > a[href^="https://spotify.link"]
 {
-  color: rgb(24, 185, 81);
+  color: rgb(108, 194, 97);
 }
 /* Makes steam links steam blue */
 div[id^=message-content] > a[href^="https://steampowered.com"], 
 div[id^=message-content] > a[href^="https://store.steampowered.com"],
 div[id^=message-content] > a[href^="https://steamcommunity.com"]
 {
-  color: rgb(32, 105, 164);
+  color: rgb(67, 132, 185);
 }
 /* Makes youtube links red */
 div[id^=message-content] > a[href^="https://youtu.be"], 
 div[id^=message-content] > a[href^="https://youtube.com"],
 div[id^=message-content] > a[href^="https://www.youtube.com"]
 {
-  color: rgb(255, 62, 62);
+  color: rgb(248, 101, 90);
 }
 /* Makes osu links pink */
 div[id^=message-content] > a[href^="https://osu.ppy.sh"]
 {
-  color: rgb(242, 97, 159);
+  color: rgb(250, 124, 179);
 }
 /* makes ripley fucking pink */
 div[id^=message-content] > a[href^="https://zen.anekodot.lol"]
@@ -45,15 +45,15 @@ div[id^=message-content] > a[href^="https://zen.anekodot.lol"]
 div[id^=message-content] > a[href^="https://google.com/"],
 div[id^=message-content] > a[href^="https://goog.gl/"]
 {
-  color: rgb(251, 188, 4);
+  color: rgb(255, 191, 0);
 }
 /* Makes github links light-gray */
 div[id^=message-content] > a[href^="https://github.com"],
 div[id^=message-content] > a[href^="https://gist.github.com/"]
 {
-  color: rgb(172, 172, 172);
+  color: rgb(94, 120, 160);
 }
 
-.messagelogger-deleted [class*="contents"] > :is(div, h1, h2, h3, p) {
-  color: rgb(80, 80, 80) !important;
-}
+/* .messagelogger-deleted [class*="contents"] > :is(div, h1, h2, h3, p) {
+  color: rgb(168, 40, 40) !important;
+} */
