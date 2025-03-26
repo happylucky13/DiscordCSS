@@ -1,4 +1,4 @@
-@import url("https://raw.githubusercontent.com/PeeblyWeeb/DiscordCSS/refs/heads/main/links.css");
+@import url("https://raw.githubusercontent.com/happylucky13/DiscordCSS/refs/heads/main/links.css");
 
 /* Hide "(edited)" from messages until hovered */
 span:has(> time[aria-label^="Edited"]) {
